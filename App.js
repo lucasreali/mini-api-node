@@ -7,7 +7,6 @@ app.use(express.json());
 
 let products = [];
 
-// Função para carregar os produtos do arquivo JSON
 const loadProducts = () => {
     try {
         const data = fs.readFileSync("products.json", "utf-8");
